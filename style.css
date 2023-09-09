@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background-color: darkslategray;
+    background-color: rgb(21, 34, 34);
     color: gold;
     text-shadow: 1px 1px black;
     text-align: center;
@@ -24,15 +24,18 @@ header {
 
 
 
-div {
-    border: solid 1px black;      /* Remove later */
-}
+/* div {
+    border: solid 1px black;      
+} */
 
 .body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60%;
+    height: 100%;
+    background-color: #222255;
+    opacity: 10;
+    color: #eeeeee;
 
 }
 
@@ -40,7 +43,7 @@ div {
 
 .container {
     width: 55%;
-    height: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -52,6 +55,10 @@ div {
    justify-content: space-around;
    height: 15%;
    align-items: end;
+}
+
+span {
+    font-size: 30px;
 }
 
 .cards {
@@ -67,6 +74,7 @@ div {
     justify-content: center;
     align-items: center;
     width: 100%;
+    font-size: 40px;
 }
 
 .choices {
@@ -79,6 +87,9 @@ div {
 .choice {
     padding: 15px 25px;
     border-radius: 5px;
+    font-size: 20px;
+    background-color: #5555ff;
+    color: white;
 }
 
 
