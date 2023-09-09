@@ -1,0 +1,45 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-between;
+    
+
+}
+
+header {
+    background-color: darkslategray;
+    color: gold;
+    text-shadow: 1px 1px black;
+    text-align: center;
+
+}
+
+
+
+div {
+    border: solid 1px black;      /* Remove later */
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+footer {
+    background-color: black;
+    height: 30px;
+}
