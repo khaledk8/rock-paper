@@ -15,27 +15,50 @@ function getComputerChoice () {
     }
 }
 
+let rockChoice = document.querySelector("#rock")
+let paperChoice = document.querySelector("#paper")
+let scissorsChoice = document.querySelector("#scissors")
+
+rockChoice.addEventListener('click', function () {
+    game("rock")
+})
+
+paperChoice.addEventListener('click', function () {
+    game("paper")
+})
+
+scissorsChoice.addEventListener('click', function () {
+    game("scissors")
+})
 
 
-function getPlayerSelection () {
+
+/* function getPlayerSelection (choice) {
+    round (choice, getComputerChoice())
    
-}
+} */
 
 
 function round (player, choice) {
     if (player == choice) return "draw";
-    else if (computer == rock) {
+    else if (choice == rock) {
         if (player == paper) {
         p++ }
         else c++;
-    } else if (computer == paper) {
+    } else if (choice == paper) {
         if (player == rock) {
             c++
         } else p++
-    } else if (computer == scissors) {
+    } else if (choice == scissors) {
         if (player == rock) {
         p++ } else c++;
     }
+}
+
+
+function game (pchoice) {
+   /*  if c p finish game and show popup */
+   round(pchoice, getComputerChoice());
 }
 
 
