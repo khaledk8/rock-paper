@@ -1,0 +1,181 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-between;
+    
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-between;
+}
+
+header {
+    background-color: rgb(21, 34, 34);
+    color: gold;
+    text-shadow: 1px 1px black;
+    text-align: center;
+
+}
+
+
+
+/* div {
+    border: solid 1px black;      
+} */
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #222255;
+    opacity: 10;
+    color: #eeeeee;
+
+}
+
+
+
+.container {
+    width: 55%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.count {
+   display: flex;
+   justify-content: space-around;
+   height: 15%;
+   align-items: end;
+}
+
+span {
+    font-size: 30px;
+}
+
+.cards {
+ display: flex;
+ justify-content: space-around;
+ height: 65%;
+
+
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 40px;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15%;
+}
+
+.choice {
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #5555ff;
+    color: white;
+}
+
+
+footer {
+    background-color: black;
+    height: 30px;
+}
+
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 150ms ease-in-out;
+    border: 1px solid white;
+    border-radius: 5px;
+    z-index: 10;
+    background-color: rgb(21, 34, 34);
+    width: 400px;
+    height: 250px;
+    max-width: 50%;
+    opacity: 99%;
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-head {
+    
+    width: 90%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.result {
+    align-self: center;
+    font-size: 22px;
+    color: #eeeeee;
+    text-align: center;
+    font-weight: bold;
+}
+
+.popup-body {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.start {
+    align-self: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 40px;
+    border-radius: 10px;
+    color: #5555ff;
+    border-color: #5555ff;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    z-index: 9;
+    transition: 150ms ease-in-out;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
