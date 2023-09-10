@@ -8,7 +8,38 @@
     <script src="game.js" defer> </script>
 </head>
 <body>
-   
-    
+    <main>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <div class="body">
+        <div class="container">
+            <div class="count">
+                <span id="player">Player: <span class="pscore"></span></span>
+                <span id="comp">Computer: <span class="cscore"></span></span>
+            </div>
+            <div class="cards">
+                <div id="left" class="card">Choice</div>
+                <div id="right" class="card">Choice</div>
+            </div>
+            <div class="choices">
+                <button id="rock" class="choice">Rock</button>
+                <button id="paper" class="choice">Paper</button>
+                <button id="scissors" class="choice">Scissors</button>   
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    </main>
+    <div class="popup">
+        <div class="popup-head">
+            <p class="result"> debugging</p>
+        </div>
+        <div class="popup-body">
+            <button class="start">Play again</button>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
 </body>
 </html>
